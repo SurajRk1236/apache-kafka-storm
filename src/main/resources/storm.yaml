@@ -1,0 +1,6 @@
+storm.zookeeper.servers:
+  - "127.0.0.1"
+nimbus.host: "127.0.0.1"
+storm.local.dir: /tmp/storm
+nimbus.thrift.max_buffer_size: 20480000
+ui.host: "localhost:8085"

@@ -1,0 +1,14 @@
+bootstrapServers: "localhost:9092"
+
+producer:
+  keySerializer: "org.apache.kafka.common.serialization.StringSerializer"
+  valueSerializer: "org.apache.kafka.common.serialization.StringSerializer"
+  acks: "all"
+  retries: 3
+
+consumer:
+  groupId: "my-group"
+  keyDeserializer: "org.apache.kafka.common.serialization.StringDeserializer"
+  valueDeserializer: "org.apache.kafka.common.serialization.StringDeserializer"
+  autoOffsetReset: "earliest"
+  enableAutoCommit: true
